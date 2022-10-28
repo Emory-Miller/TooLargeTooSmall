@@ -38,11 +38,13 @@ public class Main {
             if (number == correctNumber) {
                 System.out.println("Amazing! You guessed the right number!");
                 break;
+
             } else if( number > correctNumber) {
                 guesses = guesses + 1;
                 System.out.println("WRONG! Your guess was too high! You have guessed "+i+" times.");
                 numberInput = sc.nextLine();
                 number = Integer.parseInt(numberInput);
+
             } else {
                 guesses = guesses + 1;
                 System.out.println("WRONG! Your guess was too low! You have guessed "+i+" times.");
